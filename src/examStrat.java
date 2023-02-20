@@ -2,13 +2,13 @@ import java.lang.Math;
 import java.util.Scanner;
 
 public class examStrat {
+    private static Scanner scanner = new Scanner(System.in);
     public static void main (String args[]){
-        Scanner scanner = new Scanner(System.in);
         while (true){
-            int questions = (int)askForDouble("How many questions?", scanner);
-            double goal = askForDouble("What score do you aim for?", scanner);
-            double scorePerHit = askForDouble("How much for each correct answer?", scanner);
-            double scorePerMiss = askForDouble("How much less for each wrong answer?", scanner);
+            int questions = (int)askForDouble("How many questions?");
+            double goal = askForDouble("What score do you aim for?");
+            double scorePerHit = askForDouble("How much for each correct answer?");
+            double scorePerMiss = askForDouble("How much less for each wrong answer?");
             int miss = 0;
 
             for (int hit = (int)Math.ceil(goal / scorePerHit); hit <= questions - miss; hit ++){
@@ -23,8 +23,7 @@ public class examStrat {
             }
         }
     }
-
-    private static double askForDouble(String string, Scanner scanner) {
+    private static double askForDouble(String string) {
         System.out.println(string);
         return scanner.nextDouble();
     }
