@@ -2,7 +2,7 @@
 
 I'm not good at writing math, but the idea is to:  
 Maximize y in c <= ax -by, where c is the score you need, a is the points earned per correct answer, b is the points lost per wrong answer, x is the number of correct answers and y is the number of incorrect answers, y E N, x A N [|c/a|, number of questions of the test - y].  
-x range is not exactly right. Either way, the lowest x is the lowest one that if you answer exactly x questions and have them all right you pass. The highest one could be just the number of questions, although I've tried to be a little more specific. The program would be useful even if x wasn't well defined.  
+x range is not exactly right. Either way, the lowest x is the lowest one such that if you answer exactly x questions and have them all right you pass. The highest one could be just the number of questions, although I've tried to be a little more specific. The program would be useful even if x wasn't well defined.  
 The program doesn't define y or x as E N, so it only works for sure if correct answers add and mistakes subtract. This defines its purpose.
 
 ## Usage
@@ -29,4 +29,4 @@ For a 20 questions exam, where you need a score of 5, every right question adds 
         13 correct and 7 wrong out of 20 giving a score of 5.3333379999999995
 
 Notice that this is heavily aimed to just pass. As you can see rounding b down guarantees scenarios 2 and 3 appear.  
-To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones right.
+To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones correctly.
