@@ -15,15 +15,18 @@ It doesn't accept infinitely long numbers as input, and you should probably roun
 
 For a 20 questions exam, where you need a score of 5, every right question adds 0,5 and every wrong question subtracts 0,5 / 3 this is 0,166666:
 
-    How many questions?
-    20
-    What score do you aim for?
-    5
-    How much for each correct answer?
-    0,5
-    How much less for each wrong answer?
-    0,166666
-    10 correct and 0 wrong out of 10 giving a score of 5.0
-    11 correct and 3 wrong out of 14 giving a score of 5.000002
-    12 correct and 6 wrong out of 18 giving a score of 5.000004
-    13 correct and 7 wrong out of 20 giving a score of 5.3333379999999995
+  How many questions?
+  20
+  What score do you aim for?
+  5
+  How much for each correct answer?
+  0,5
+  How much less for each wrong answer?
+  0,166666
+  10 correct and 0 wrong out of 10 giving a score of 5.0
+  11 correct and 3 wrong out of 14 giving a score of 5.000002
+  12 correct and 6 wrong out of 18 giving a score of 5.000004
+  13 correct and 7 wrong out of 20 giving a score of 5.3333379999999995
+  
+Notice that this is heavily aimed to just pass. As you can see rounding b down guarantees scenarios 2 and 3 appear.  
+To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones right.
