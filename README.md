@@ -7,13 +7,13 @@ The program doesn't define y or x as E N, so it only works for sure if correct a
 
 I've added a program to get the score you need in an exam, assuming you hit the max score in your weighted assignments (unfortunately I can't generate tuples because there are infinite), prompted the weight of the exam as well as a possible (rather common in my college) hard-required score in the exam. I won't edit this file furthermore, because this explanation suffices, so the next sections refer only to the test score calculator.
 
-## Usage
+# Usage
 
 As far as I know, you'll need JVM 17 or higher. Just double-click the batch file. Enter the number of questions of the test, c, a and b in that order.  
 It needs the decimal value inputs to use commas instead of dots.  
 It doesn't accept infinitely long numbers as input, and you should probably round down inputs like 1/3. It shouldn't be too hard to edit it so it does.
 
-## Example
+# Example
 
 For a 20 questions exam, where you need a score of 5, every right question adds 0,5 and every wrong question subtracts 0,5 / 3 this is 0,166666:
 
@@ -32,3 +32,7 @@ For a 20 questions exam, where you need a score of 5, every right question adds 
 
 Notice that this is heavily aimed to just pass. As you can see rounding b down guarantees scenarios 2 and 3 appear.  
 To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones correctly.
+
+# TODO
+
+include 0-score in assignments for the subject calculator
