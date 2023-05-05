@@ -1,2 +1,2 @@
-java -jar examStrat.jar
+java -jar collegeStrat.jar
 PAUSE
