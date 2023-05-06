@@ -5,7 +5,7 @@ Maximize y in c <= ax -by, where c is the score you need, a is the points earned
 x range is not exactly right. Either way, the lowest x is the lowest one such that if you answer exactly x questions and have them all right you pass. The highest one could be just the number of questions, although I've tried to be a little more specific. The program would be useful even if x wasn't well defined.  
 The program doesn't define y or x as E N, so it only works for sure if correct answers add and mistakes subtract. This defines its purpose.
 
-I've added a program to get the score you need in an exam, assuming you hit the max score in your weighted assignments (unfortunately I can't generate tuples because there are infinite), prompted the weight of the exam as well as a possible (rather common in my college) hard-required score in the exam. I won't edit this file furthermore, because this explanation suffices, so the next sections refer only to the test score calculator.
+I've added a program to get the score you need in an exam, assuming you hit the max or the min score in your weighted assignments (unfortunately I can't generate more tuples because there are infinite), prompted the weight of the exam as well as a possible (rather common in my college) hard-required score in the exam. I won't edit this file furthermore, because this explanation suffices, so the next sections refer only to the test score calculator.
 
 # Usage
 
@@ -32,7 +32,3 @@ For a 20 questions exam, where you need a score of 5, every right question adds 
 
 Notice that this is heavily aimed to just pass. As you can see rounding b down guarantees scenarios 2 and 3 appear.  
 To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones correctly.
-
-# TODO
-
-include 0-score in assignments for the subject calculator

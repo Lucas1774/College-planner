@@ -10,5 +10,6 @@ public class SubjectStrat {
             assignmentScore = (5 - examWeight * needed) / (1 - examWeight);
         }
         System.out.println( assignmentScore + " in assignments and " + needed + " in exam for a score of " + (needed * examWeight + (1 - examWeight) * assignmentScore));
+        System.out.println( "0 in assignments and " + 5 / examWeight + " in exam for a score of 5");
     }
 }
