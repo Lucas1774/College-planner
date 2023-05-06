@@ -12,7 +12,6 @@ public class CollegeStrat {
                 default:
                     System.out.println("Invalid input.");
                     break;
-            
             }
         }
     }
