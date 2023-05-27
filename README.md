@@ -15,16 +15,16 @@ It doesn't accept infinitely long numbers as input, and you should probably roun
 
 # Example
 
-For a 20 questions exam, where you need a score of 5, every right question adds 0,5 and every wrong question subtracts 0,5 / 3 this is 0,166666:
+For a 20 questions exam, where you need a score of 5, every right question adds 0.5 and every wrong question subtracts 0.5 / 3 this is 0,166666:
 
         How many questions?
         20
         What score do you aim for?
         5
         How much for each correct answer?
-        0,5
+        0.5
         How much less for each wrong answer?
-        0,166666
+        0.166666
         10 correct and 0 wrong out of 10 giving a score of 5.0
         11 correct and 3 wrong out of 14 giving a score of 5.000002
         12 correct and 6 wrong out of 18 giving a score of 5.000004
