@@ -15,7 +15,7 @@ It doesn't accept infinitely long numbers as input, and you should probably roun
 
 # Example
 
-For a 20 questions exam, where you need a score of 5, every right question adds 0.5 and every wrong question subtracts 0.5 / 3 this is 0,166666:
+For a 20 questions exam, where you need a score of 5, every right question adds 0.5 and every wrong question subtracts 0.5 / 3 this is 0.166666:
 
         How many questions?
         20
