@@ -1,4 +1,4 @@
-## Program
+# Program
 
 I'm not good at writing math, but the idea is to:  
 Maximize y in c <= ax -by, where c is the score you need, a is the points earned per correct answer, b is the points lost per wrong answer, x is the number of correct answers and y is the number of incorrect answers, y E N, x A N [|c/a|, number of questions of the test - y].  
