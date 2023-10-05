@@ -10,21 +10,21 @@ I've added a program to get the score you need in an exam, assuming you hit the 
 # Usage
 
 As far as I know, you'll need JVM 17 or higher. Just double-click the batch file. Enter the number of questions of the test, c, a and b in that order.  
-It needs the decimal value inputs to use commas instead of dots.  
+<s>It needs the decimal value inputs to use commas instead of dots.</s>  
 It doesn't accept infinitely long numbers as input, and you should probably round down inputs like 1/3. It shouldn't be too hard to edit it so it does.
 
 # Example
 
-For a 20 questions exam, where you need a score of 5, every right question adds 0,5 and every wrong question subtracts 0,5 / 3 this is 0,166666:
+For a 20 questions exam, where you need a score of 5, every right question adds 0.5 and every wrong question subtracts 0.5 / 3 this is 0.166666:
 
         How many questions?
         20
         What score do you aim for?
         5
         How much for each correct answer?
-        0,5
+        0.5
         How much less for each wrong answer?
-        0,166666
+        0.166666
         10 correct and 0 wrong out of 10 giving a score of 5.0
         11 correct and 3 wrong out of 14 giving a score of 5.000002
         12 correct and 6 wrong out of 18 giving a score of 5.000004
