@@ -1,6 +1,8 @@
 public class CollegeStrat {
+    
     public static void main(String[] args) {
-        while (true){
+        String again = "y";
+        while (!again.equals("n")) {
             int ans = (int) Utils.askForDouble("What program do you want to run?\n" + "1 - Subject calculator.\n" + "2 - Test calculator.");
             switch (ans) {
                 case 1:
@@ -11,8 +13,9 @@ public class CollegeStrat {
                     break;
                 default:
                     System.out.println("Invalid input.");
-                    break;
+                    continue;
             }
+            again = Utils.askForString("Again? [Y/n]");
         }
     }
 }
