@@ -11,7 +11,7 @@ I've added a program to get the score you need in an exam, assuming you hit the 
 
 As far as I know, you'll need JVM 17 or higher. Just double-click the batch file. Enter the number of questions of the test, c, a and b in that order.  
 <s>It needs the decimal value inputs to use commas instead of dots.</s>  
-It doesn't accept infinitely long numbers as input, and you should probably round down inputs like 1/3. It shouldn't be too hard to edit it so it does.
+It doesn't accept infinitely long numbers as input, <s>and you should probably round down inputs like 1/3. It shouldn't be too hard to edit it so it does.</s>
 
 # Example
 
@@ -30,5 +30,5 @@ For a 20 questions exam, where you need a score of 5, every right question adds 
         12 correct and 6 wrong out of 18 giving a score of 5.000004
         13 correct and 7 wrong out of 20 giving a score of 5.3333379999999995
 
-Notice that this is heavily aimed to just pass. As you can see rounding b down guarantees scenarios 2 and 3 appear.  
+Notice that this is heavily aimed to just pass. <s>As you can see rounding b down guarantees scenarios 2 and 3 appear.</s>  
 To reach your goal you should never be answering any amount of questions other than 10, 14, 18 or 20, as long as you choose which ones correctly.
