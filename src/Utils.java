@@ -23,7 +23,6 @@ public class Utils {
     }
 
     /**
-     * 
      * @param question - question to ask user
      * @return - user input. If not n the program will restart
      */
