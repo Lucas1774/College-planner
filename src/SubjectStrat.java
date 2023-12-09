@@ -4,7 +4,7 @@
 public class SubjectStrat {
 
     /**
-     * Run the Subject program, which returns two scenarios to pass given the
+     * Runs the Subject program, which returns two scenarios to pass given the
      * exam weight and the hard minimum exam score. The first one assumes you get
      * the maximum score in the assignments that will help you pass. THe second
      * assumes you get the bare minimum to still be able to.
