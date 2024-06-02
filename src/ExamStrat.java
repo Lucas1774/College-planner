@@ -17,12 +17,11 @@ public class ExamStrat {
         double scorePerMiss = Utils.askForDouble("How much less for each wrong answer?");
         int miss = 0;
         for (int hit = (int) Math.ceil(goal / scorePerHit); hit <= questions - miss; hit++) {
-            miss = (int) Math.floor((hit * scorePerHit - goal) / scorePerMiss);
+            miss = (int) Math.floor(Math.round((hit * scorePerHit - goal) / scorePerMiss));
             if (miss + hit > questions) {
                 miss = questions - hit;
             }
-            if (miss != (int) Math.floor(((hit - 1) * scorePerHit - goal) / scorePerMiss)) {
-                System.out.println(hit + " correct and " + miss + " wrong out of " + (hit + miss)
+            if (miss != (int) Math.floor(Math.round(((hit - 1) * scorePerHit - goal) / scorePerMiss))) {                System.out.println(hit + " correct and " + miss + " wrong out of " + (hit + miss)
                         + " giving a score of " + String.format("%.2f", (hit * scorePerHit - miss * scorePerMiss)));
             }
         }
